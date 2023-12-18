@@ -1,0 +1,11 @@
+			<form hx-post="/services" hx-confirm="Are you sure?">
+				<input type="hidden" name="service" value="{{ .Name }}">
+{{ if .Running }}
+				<span class="ok">RUNNING</span>
+				<button type="submit" name="action" value="stop">Stop</button>
+				<button type="submit" name="action" value="restart">Restart</button>
+{{ else }}
+				<span class="error">STOPPED</span>
+				<button type="submit" name="action" value="start">Start</button>
+{{ end }}
+			</form>

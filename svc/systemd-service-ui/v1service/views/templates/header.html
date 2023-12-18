@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Systemd Services UI</title>
+
+	<style type="text/css">
+		body {
+			width: 800px;
+			color: #000000; background-color: #FFFFFF;
+			font: 16px "Courier New", monospace;
+			line-height: 1.5em;
+		}
+		header, footer { font-weight: bold; }
+		header.main { text-align: center; }
+		footer.main { margin-top: 30px; color: #FFFFFF; background-color: #000000; }
+		main { margin-left: 50px; }
+		a, a:visited { text-decoration: none; }
+		a:hover { text-decoration: none; color: #FFFFFF; background-color: #000000; }
+		span.ok { color: #00BB00; font-weight: bold; }
+		span.error { color: #BB0000; font-weight: bold; }
+		button { cursor: pointer; }
+		form.htmx-request { opacity: 0.3; }
+	</style>
+
+	<script src="/assets/common/js/htmx.min.js"></script>
+</head>
+<body>
+	<header class="main">Systemd Service UI</header>

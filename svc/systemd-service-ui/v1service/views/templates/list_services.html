@@ -1,0 +1,50 @@
+{{ template "header.html" . }}
+
+	<header>Overview</header>
+
+	<main>
+		<p>Systemd Service UI is a web-based user interface used to manage a subset of systemd services.</p>
+
+		<p>You are managing services on <strong>{{ .Hostname }}</strong>.</p>
+	</main>
+
+	<header>Services</header>
+
+	<main>
+{{ range .Services }}
+		<p>
+			<strong>{{ .Name }}</strong>: {{ .Description }}<br/>
+			{{ template "service_control.html" . }}
+		</p>
+{{ end }}
+	</main>
+
+	<header>API</header>
+
+	<main>
+		<p>Systemd Service UI supports a REST-ful JSON API over HTTP.</p>
+
+		<p>To list services, use <code>/api/services</code>.</p>
+
+		<p>To start, stop or restart a service, use <code>/api/services/&lt;service name&gt;:start</code>, <code>:stop</code> and <code>:restart</code>.</p>
+
+		<p>Example:</p>
+
+<pre>
+$ curl http://localhost:8080/api/services | jq
+{
+	"hostname": "aws-shared-dev-lon-devsrv-jamescunningham",
+	"services": [
+	{
+		"name": "datadog-agent-process.service",
+		"description": "Datadog Process Agent",
+		"running": true
+	}
+}
+
+$ curl http://localhost:8080/api/services/datadog-agent-process.service:restart
+HTTP 204 No Content
+</pre>
+	</main>
+
+{{ template "footer.html" . }}

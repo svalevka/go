@@ -1,0 +1,14 @@
+---
+logs:
+  debug: Yes
+
+streams:
+- name: FOO
+  nats:
+    servers:
+    - nats://localhost:4222
+    username: app
+    password: changeme
+
+statsd:
+  host: localhost:8125

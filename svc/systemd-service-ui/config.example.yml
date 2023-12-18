@@ -1,0 +1,12 @@
+---
+logs:
+  # enable debug logging.
+  debug: Yes
+
+listen:
+# listen on localhost port 8080
+- localhost:8080
+
+services:
+# only manage services prefixed with laser-
+- ^laser-
