@@ -1,0 +1,12 @@
+[Unit]
+Description=Systemd Service UI
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/systemd-service-ui --config /etc/systemd-service-ui.yml
+Restart=on-failure
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target

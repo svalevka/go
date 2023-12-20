@@ -26,6 +26,10 @@ RUN go mod download
 
 COPY . .
 
+ARG REVISION=unknown
+
+RUN CGO_ENABLED=0 go build -o /service -trimpath -ldflags="-X 'gitlab.com/laserdigital/platform/go/pkg/build.revision=${REVISION}'" svc/${SERVICE}/cmd/main.go
+
 
 # --------------------------------------------------------------------------- #
 # STEP 2: Result

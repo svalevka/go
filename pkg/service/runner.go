@@ -7,6 +7,7 @@ import (
 	"log/slog"
 	"os"
 
+	"gitlab.com/laserdigital/platform/go/pkg/build"
 	"gitlab.com/laserdigital/platform/go/pkg/config"
 	"gitlab.com/laserdigital/platform/go/pkg/tasks"
 )
@@ -57,6 +58,8 @@ func Run[CONFIG any](serviceName string, setup func(context.Context, *Runner, *C
 	if err != nil {
 		return exitError(1, "Setup: %s", err)
 	}
+
+	log.Info("service starting...", slog.String("revision", build.GetRevision(7)))
 
 	err = rn.Tasks.Run(ctx)
 	if err != nil {

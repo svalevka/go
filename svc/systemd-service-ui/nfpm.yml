@@ -1,0 +1,28 @@
+name: "systemd-service-ui"
+version: "1.0.5"
+homepage: "https://gitlab.com/laserdigital/platform/go"
+description: "systemd-service-ui implements a web application and api to manage a subset of systemd services"
+maintainer: "Platform Team <platform@laserdigital.com>"
+vendor: "Laser Digital"
+
+arch: "amd64"
+platform: "linux"
+release: "1"
+provides:
+- "systemd-service-ui"
+license: "Proprietary"
+
+contents:
+- type: config|noreplace
+  src: config.example.yml
+  dst: /etc/systemd-service-ui.yml
+  file_info:
+    mode: 0600
+- src: build/dist/systemd-service-ui
+  dst: /usr/sbin/systemd-service-ui
+  file_info:
+    mode: 0555
+- src: build/static/systemd.service
+  dst: /etc/systemd/system/systemd-service-ui.service
+  file_info:
+    mode: 0644

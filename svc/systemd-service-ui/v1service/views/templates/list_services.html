@@ -6,6 +6,8 @@
 		<p>Systemd Service UI is a web-based user interface used to manage a subset of systemd services.</p>
 
 		<p>You are managing services on <strong>{{ .Hostname }}</strong>.</p>
+
+		<p>This page will automatically be refreshed every 5 seconds.</p>
 	</main>
 
 	<header>Services</header>
@@ -47,4 +49,5 @@ HTTP 204 No Content
 </pre>
 	</main>
 
+	<meta http-equiv="refresh" content="5">
 {{ template "footer.html" . }}
