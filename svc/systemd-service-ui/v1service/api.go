@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"gitlab.com/laserdigital/platform/go/pkg/net/http/api"
-	v1 "gitlab.com/laserdigital/platform/go/svc/systemd-service-ui/v1"
+	"github.com/svalevka/go/pkg/net/http/api"
+	v1 "github.com/svalevka/go/svc/systemd-service-ui/v1"
 )
 
 // API is the JSON API equivalent of the Web Application.

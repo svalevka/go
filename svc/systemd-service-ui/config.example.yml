@@ -8,5 +8,5 @@ listen:
 - localhost:8080
 
 services:
-# only manage services prefixed with laser-
-- ^laser-
+# only manage services prefixed with myservice-
+- ^myservice-

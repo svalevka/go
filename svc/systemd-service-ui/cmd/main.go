@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"gitlab.com/laserdigital/platform/go/pkg/service"
-	"gitlab.com/laserdigital/platform/go/svc/systemd-service-ui/v1service"
+	"github.com/svalevka/go/pkg/service"
+	"github.com/svalevka/go/svc/systemd-service-ui/v1service"
 )
 
 func main() {

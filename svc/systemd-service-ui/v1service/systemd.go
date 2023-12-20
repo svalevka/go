@@ -9,7 +9,7 @@ import (
 
 	"github.com/coreos/go-systemd/v22/dbus"
 
-	v1 "gitlab.com/laserdigital/platform/go/svc/systemd-service-ui/v1"
+	v1 "github.com/svalevka/go/svc/systemd-service-ui/v1"
 )
 
 // Systemd abstracts operations against the host Systemd via Dbus.

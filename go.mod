@@ -1,4 +1,4 @@
-module gitlab.com/laserdigital/platform/go
+module github.com/svalevka/go
 
 go 1.21
 

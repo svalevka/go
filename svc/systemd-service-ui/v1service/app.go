@@ -6,8 +6,8 @@ import (
 
 	"github.com/go-chi/chi/v5"
 
-	"gitlab.com/laserdigital/platform/go/pkg/net/http/web/assets"
-	"gitlab.com/laserdigital/platform/go/svc/systemd-service-ui/v1service/views"
+	"github.com/svalevka/go/pkg/net/http/web/assets"
+	"github.com/svalevka/go/svc/systemd-service-ui/v1service/views"
 )
 
 // App implements the Web Application portion of systemd-service-ui.

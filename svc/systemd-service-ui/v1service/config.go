@@ -8,11 +8,11 @@ import (
 
 	"github.com/go-chi/chi/v5"
 
-	"gitlab.com/laserdigital/platform/go/pkg/config/common"
-	"gitlab.com/laserdigital/platform/go/pkg/encoding"
-	"gitlab.com/laserdigital/platform/go/pkg/net/http/api"
-	"gitlab.com/laserdigital/platform/go/pkg/service"
-	"gitlab.com/laserdigital/platform/go/pkg/tasks"
+	"github.com/svalevka/go/pkg/config/common"
+	"github.com/svalevka/go/pkg/encoding"
+	"github.com/svalevka/go/pkg/net/http/api"
+	"github.com/svalevka/go/pkg/service"
+	"github.com/svalevka/go/pkg/tasks"
 )
 
 // Config contains the configuration used to configure the systemd-service-ui

@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"gitlab.com/laserdigital/platform/go/pkg/config/common"
-	"gitlab.com/laserdigital/platform/go/pkg/service"
+	"github.com/svalevka/go/pkg/config/common"
+	"github.com/svalevka/go/pkg/service"
 )
 
 type Config struct {

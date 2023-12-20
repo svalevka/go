@@ -3,7 +3,7 @@ package views
 import (
 	"net/http"
 
-	v1 "gitlab.com/laserdigital/platform/go/svc/systemd-service-ui/v1"
+	v1 "github.com/svalevka/go/svc/systemd-service-ui/v1"
 )
 
 // View is implemented by all views exposed by this package.

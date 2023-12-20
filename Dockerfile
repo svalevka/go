@@ -28,7 +28,7 @@ COPY . .
 
 ARG REVISION=unknown
 
-RUN CGO_ENABLED=0 go build -o /service -trimpath -ldflags="-X 'gitlab.com/laserdigital/platform/go/pkg/build.revision=${REVISION}'" svc/${SERVICE}/cmd/main.go
+RUN CGO_ENABLED=0 go build -o /service -trimpath -ldflags="-X 'github.com/svalevka/go/pkg/build.revision=${REVISION}'" svc/${SERVICE}/cmd/main.go
 
 
 # --------------------------------------------------------------------------- #

@@ -24,6 +24,6 @@ mkdir -p "svc/$SERVICE/build/dist"
 echo "» building binary for $SERVICE at revision $REVISION..."
 
 # build go binary.
-go build -o "svc/$SERVICE/build/dist/$SERVICE" -trimpath -ldflags "-X 'gitlab.com/laserdigital/platform/go/pkg/build.revision=$REVISION'" svc/$SERVICE/cmd/main.go
+go build -o "svc/$SERVICE/build/dist/$SERVICE" -trimpath -ldflags "-X 'github.com/svalevka/go/pkg/build.revision=$REVISION'" svc/$SERVICE/cmd/main.go
 
 echo "» binary for $SERVICE built to svc/$SERVICE/build/dist/$SERVICE"

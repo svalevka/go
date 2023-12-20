@@ -7,9 +7,9 @@ import (
 	"log/slog"
 	"os"
 
-	"gitlab.com/laserdigital/platform/go/pkg/build"
-	"gitlab.com/laserdigital/platform/go/pkg/config"
-	"gitlab.com/laserdigital/platform/go/pkg/tasks"
+	"github.com/svalevka/go/pkg/build"
+	"github.com/svalevka/go/pkg/config"
+	"github.com/svalevka/go/pkg/tasks"
 )
 
 // Runner contains the runtime environment of the Service to be configured.

@@ -1,9 +1,9 @@
 name: "systemd-service-ui"
 version: "1.0.5"
-homepage: "https://gitlab.com/laserdigital/platform/go"
+homepage: "https://github.com/svalevka/go"
 description: "systemd-service-ui implements a web application and api to manage a subset of systemd services"
-maintainer: "Platform Team <platform@laserdigital.com>"
-vendor: "Laser Digital"
+maintainer: "Platform Team <platform@myservicedigital.com>"
+vendor: "Daugavpils Digital"
 
 arch: "amd64"
 platform: "linux"

@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"gitlab.com/laserdigital/platform/go/pkg/encoding"
+	"github.com/svalevka/go/pkg/encoding"
 )
 
 // None is a placeholder Request Body used to identify requests that are not
